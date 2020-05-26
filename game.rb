@@ -20,6 +20,11 @@ def game(player)
       puts "------Game Over!!-------"
     end
 
+    def score(player1, player2)
+      puts "Score for player 1: #{player1.count_life}/3"
+      puts "Score for player 2: #{player2.count_life}/3"
+    end
+
 
     def game_plan
       while player.count_life

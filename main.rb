@@ -12,9 +12,8 @@ require './players'
   while player1.count_life > 0 && player2.count_life > 0
     puts "ARE WE IN WHILE LOOP"
     if player1.turn == 1
-      
+
       puts "------New Turn!!-------"
-  
       elsif game(player1) == false
         player2.life_lose
       end
@@ -26,9 +25,14 @@ require './players'
 
       if player2.check_turn == 1
         puts "------New Turn!!-------"
-      
+
       elsif game(player1) == false
         player2.life_lose
       end
-    end
+
+      score(player1, player2)
+      player1.turn_set(0)
+      player2.turn_set(1)
+  end
+
 

@@ -2,7 +2,6 @@
 #stores lives of player1 & player2
 #contains class of player
 
-
 class Player
 
   attr_accessor :name, :turn, :lives
