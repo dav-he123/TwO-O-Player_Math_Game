@@ -7,9 +7,9 @@ class Player
 
   attr_accessor :name, :turn, :lives
 
-  def initialize(lives, turn, name)
+  def initialize(name)
     self.lives = 3
-    self.turn = turn
+    self.turn = 0
     self.name = name
 
   end
@@ -21,7 +21,6 @@ class Player
   def count_life
     self.lives
   end
-
 
   def turn_set(number)
     self.turn = number

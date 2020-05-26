@@ -10,8 +10,9 @@ require './players'
   end
 
   while player1.count_life > 0 && player2.count_life > 0
-    if player1.turn_set == 1
-
+    puts "ARE WE IN WHILE LOOP"
+    if player1.turn == 1
+      
       puts "------New Turn!!-------"
   
       elsif game(player1) == false

@@ -1,5 +1,4 @@
-require './main'
-
+# require './main'
 
 def game(player)
 
@@ -15,3 +14,11 @@ def game(player)
       @question = Question.new
       puts "#{player.name}: What does #{number_1} plus #{number_2} equal?"
     end
+
+    def game_over
+      puts "#{player.name} has won with a score of: #{player.count_life}"
+      puts "------Game Over!!-------"
+    end
+
+
+  end
