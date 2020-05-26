@@ -21,4 +21,11 @@ def game(player)
     end
 
 
+    def game_plan
+      while player.count_life
+        if choice_player == answer
+          puts "#{player.name}: Yes, that is correct!!"
+        else
+          puts "#{player.name}: No, that is wrong!!"
+        end
   end
