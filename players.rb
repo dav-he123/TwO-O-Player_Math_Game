@@ -18,6 +18,11 @@ class Player
     self.turn
   end
 
+  def count_life
+    self.lives
+  end
+
+
   def turn_set(number)
     self.turn = number
   end
